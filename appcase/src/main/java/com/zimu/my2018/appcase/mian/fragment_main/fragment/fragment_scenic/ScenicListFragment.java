@@ -17,7 +17,7 @@ import com.zimu.my2018.appcase.scenic.scenicdetail.ScenicDetailActivity;
 import com.zimu.my2018.quyouapi.data.main.scenics.ScenicBean;
 import com.zimu.my2018.quyouapi.data.main.scenics.ScenicListData;
 import com.zimu.my2018.quyouapi.data.main.scenics.ScenicsBean;
-import com.zimu.my2018.quyoulib.core.base.BaseHcFragment;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuFragment;
 import com.zimu.my2018.quyoulib.core.di.scope.PerActivity;
 import com.zimu.my2018.quyouui.widget.viewpager.WrapContentHeightViewPager;
 
@@ -31,7 +31,7 @@ import butterknife.BindView;
  * A simple {@link Fragment} subclass.
  */
 @PerActivity
-public class ScenicListFragment extends BaseHcFragment implements ScenicListContract.View,
+public class ScenicListFragment extends BaseZimuFragment implements ScenicListContract.View,
         BaseQuickAdapter.OnItemClickListener {
 
     @BindView(R2.id.rv_main_scenic)

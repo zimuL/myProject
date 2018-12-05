@@ -5,7 +5,7 @@ import android.content.pm.ApplicationInfo;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatDelegate;
 
-import com.zimu.my2018.quyoulib.core.base.HcApplication;
+import com.zimu.my2018.quyoulib.core.base.ZimuApplication;
 import com.zimu.my2018.quyoulib.net.config.NetConfig;
 import com.zimu.my2018.quyoulib.pref_shared_preferences.PrefManager;
 import com.zimu.my2018.quyoulib.utils.DateTimeFormat;
@@ -33,7 +33,7 @@ import dagger.android.AndroidInjector;
  * 描述：base
  * Created by hxl on 2018/10/4
  */
-public class BaseApplication extends HcApplication {
+public class BaseApplication extends ZimuApplication {
 
     private static BaseApplication instance;
 
@@ -82,7 +82,7 @@ public class BaseApplication extends HcApplication {
         LoadingConfig.init(R.layout.hc_loadding_view, R.layout.hc_preloading_view, R.layout.hc_empty_view, R.layout.hc_error_view);
 
         //初始化quyouUi包名
-        ConfigPackage.init("res://com.haichou.xlqy.xiaoliuquyou/");
+        ConfigPackage.init("res://com.zimu.test.myproject/");
 
         // 初始化网络请求路径
         NetConfig.init(URLConstants.URL_RELEASE_QY, Constants.Debug);
@@ -102,7 +102,7 @@ public class BaseApplication extends HcApplication {
      */
 
     @Override
-    protected AndroidInjector<? extends HcApplication> applicationInjector() {
+    protected AndroidInjector<? extends ZimuApplication> applicationInjector() {
         AppComponent appComponent = DaggerAppComponent.builder().application(this).build();
         appComponent.inject(this);
         return appComponent;

@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.zimu.my2018.quyoulib.core.base.BaseHcActivity;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuActivity;
 import com.zimu.my2018.quyoulib.utils.StringUtils;
 import com.zimu.my2018.quyoulib.utils.ToastUtils;
 import com.zimu.my2018.quyouui.R;
@@ -32,7 +32,7 @@ import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
  * 描述：
  * Created by hxl on 2018/10/5
  */
-public abstract class BaseTitleActivity extends BaseHcActivity{
+public abstract class BaseTitleActivity extends BaseZimuActivity {
 
     private FrameLayout contact_layout;
     private CustomTitle mCustomTitle;

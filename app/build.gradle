@@ -7,7 +7,7 @@ static def getTime() {
 android {
     compileSdkVersion 27
     defaultConfig {
-        applicationId "com.haichou.xlqy.xiaoliuquyou"
+        applicationId "com.zimu.test.myproject"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1

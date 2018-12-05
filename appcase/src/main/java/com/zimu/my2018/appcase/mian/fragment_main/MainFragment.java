@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -27,15 +26,13 @@ import com.zimu.my2018.appcase.scenic.scenicnearby.ScenicNearbyActivity;
 import com.zimu.my2018.appcase.search.searchscenic.SearchScenicActivity;
 import com.zimu.my2018.quyouapi.data.main.ScenicWeekendListBean;
 import com.zimu.my2018.quyouapi.data.main.banner.MainBannerData;
-import com.zimu.my2018.quyouapi.data.main.scenics.ArrayImageBean;
-import com.zimu.my2018.quyoulib.core.base.BaseHcFragment;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuFragment;
 import com.zimu.my2018.quyoulib.core.di.scope.PerActivity;
 import com.zimu.my2018.quyoulib.location.LocationManager;
 import com.zimu.my2018.quyoulib.utils.DeviceUtils;
 import com.zimu.my2018.quyoulib.utils.StringUtils;
 import com.zimu.my2018.quyouui.widget.dividerdecoration.DividerDecoration;
 import com.zimu.my2018.quyouui.widget.viewpager.WrapContentHeightViewPager;
-import com.zimu.my2018.utils.ViewUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -50,7 +47,7 @@ import butterknife.BindView;
  * A simple {@link Fragment} subclass.
  */
 @PerActivity
-public class MainFragment extends BaseHcFragment implements MainFragContract.View,
+public class MainFragment extends BaseZimuFragment implements MainFragContract.View,
         OnItemClickListener, ViewPager.OnPageChangeListener {
 
     @BindView(R2.id.con_ban_view)

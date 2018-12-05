@@ -14,7 +14,7 @@ import com.amap.api.maps.model.LatLng;
 import com.amap.api.maps.model.MyLocationStyle;
 import com.zimu.my2018.appcase.R;
 import com.zimu.my2018.appcase.R2;
-import com.zimu.my2018.quyoulib.core.base.BaseHcFragment;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuFragment;
 import com.zimu.my2018.quyoulib.core.di.scope.PerActivity;
 import com.zimu.my2018.quyoulib.location.LocationManager;
 
@@ -28,7 +28,7 @@ import butterknife.BindView;
  * Created by hxl on 2018/10/11
  */
 @PerActivity
-public class CommunityFragment extends BaseHcFragment implements CommunityFragContract.View, AMap.OnMyLocationChangeListener, AMap.OnMapTouchListener {
+public class CommunityFragment extends BaseZimuFragment implements CommunityFragContract.View, AMap.OnMyLocationChangeListener, AMap.OnMapTouchListener {
 
     @BindView(R2.id.map_view)
     MapView mMapView;

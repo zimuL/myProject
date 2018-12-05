@@ -11,7 +11,7 @@ import com.zimu.my2018.appcase.R;
 import com.zimu.my2018.appcase.R2;
 import com.zimu.my2018.appcase.mian.fragment_main.fragment.fragment_footprint.adapter.FootPrintChooseAdapter;
 import com.zimu.my2018.quyouapi.data.main.ScenicFootPrintChooseListData;
-import com.zimu.my2018.quyoulib.core.base.BaseHcFragment;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuFragment;
 import com.zimu.my2018.quyoulib.core.di.scope.PerActivity;
 import com.zimu.my2018.quyoulib.utils.DeviceUtils;
 import com.zimu.my2018.quyouui.widget.dividerdecoration.DividerDecoration;
@@ -29,7 +29,7 @@ import butterknife.BindView;
  * A simple {@link Fragment} subclass.
  */
 @PerActivity
-public class FootPrintChooseFragment extends BaseHcFragment implements FootPrintChooseContract.View, BaseQuickAdapter.OnItemClickListener {
+public class FootPrintChooseFragment extends BaseZimuFragment implements FootPrintChooseContract.View, BaseQuickAdapter.OnItemClickListener {
 
     @BindView(R2.id.rv_foot_print)
     RecyclerView rv_foot_print;

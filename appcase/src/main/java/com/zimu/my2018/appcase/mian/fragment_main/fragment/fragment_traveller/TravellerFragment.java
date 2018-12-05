@@ -11,7 +11,7 @@ import com.zimu.my2018.appcase.R;
 import com.zimu.my2018.appcase.R2;
 import com.zimu.my2018.appcase.mian.fragment_main.fragment.fragment_traveller.adpter.TravellerAdapter;
 import com.zimu.my2018.quyouapi.data.main.ScenicTravellerListData;
-import com.zimu.my2018.quyoulib.core.base.BaseHcFragment;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuFragment;
 import com.zimu.my2018.quyoulib.core.di.scope.PerActivity;
 import com.zimu.my2018.quyoulib.utils.DeviceUtils;
 import com.zimu.my2018.quyouui.widget.dividerdecoration.DividerDecoration;
@@ -29,7 +29,7 @@ import butterknife.BindView;
  * A simple {@link Fragment} subclass.
  */
 @PerActivity
-public class TravellerFragment extends BaseHcFragment implements TravellerContract.View, BaseQuickAdapter.OnItemClickListener {
+public class TravellerFragment extends BaseZimuFragment implements TravellerContract.View, BaseQuickAdapter.OnItemClickListener {
 
     @BindView(R2.id.rv_traveller)
     RecyclerView rv_traveller;

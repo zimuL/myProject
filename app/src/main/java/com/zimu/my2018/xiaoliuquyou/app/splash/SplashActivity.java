@@ -5,14 +5,14 @@ import android.os.Handler;
 import android.os.Message;
 
 import com.zimu.my2018.appcase.mian.MainActivity;
-import com.zimu.my2018.quyoulib.core.base.BaseHcActivity;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuActivity;
 import com.zimu.my2018.quyoulib.utils.AppUtils;
 import com.zimu.my2018.xiaoliuquyou.R;
 
 /**
  * 启动页面
  */
-public class SplashActivity extends BaseHcActivity {
+public class SplashActivity extends BaseZimuActivity {
 
     private static final int MSG_FIRST_ENTER = 0x110; //第一次登陆或者更新后登陆
     private static final int MSG_SECOND_ENTER = 0x111; //非第一种情况

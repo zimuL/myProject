@@ -18,7 +18,7 @@ import com.zimu.my2018.appcase.user.functionintroduce.FunctionIntroduceActivity;
 import com.zimu.my2018.appcase.user.settings.SettingsActivity;
 import com.zimu.my2018.constant.ScenicType;
 import com.zimu.my2018.quyouapi.data.login.UserBean;
-import com.zimu.my2018.quyoulib.core.base.BaseHcFragment;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuFragment;
 import com.zimu.my2018.quyoulib.core.di.scope.PerActivity;
 import com.zimu.my2018.quyoulib.pref_shared_preferences.PrefManager;
 import com.zimu.my2018.quyoulib.utils.StringUtils;
@@ -36,7 +36,7 @@ import static android.app.Activity.RESULT_OK;
  * A simple {@link Fragment} subclass.
  */
 @PerActivity
-public class MineFragment extends BaseHcFragment implements MineFragContract.View{
+public class MineFragment extends BaseZimuFragment implements MineFragContract.View{
 
     @BindView(R2.id.rl_my_phone)
     RelativeLayout rl_my_phone;

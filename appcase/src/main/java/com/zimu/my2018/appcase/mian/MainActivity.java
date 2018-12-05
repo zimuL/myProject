@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Toast;
@@ -20,13 +19,13 @@ import com.zimu.my2018.appcase.mian.fragment_main.MainFragment;
 import com.zimu.my2018.appcase.mian.fragment_mine.MineFragment;
 import com.zimu.my2018.core.widget.bottom.BottomWidget;
 import com.zimu.my2018.core.widget.data.BottomItemData;
-import com.zimu.my2018.quyoulib.core.base.BaseHcActivity;
+import com.zimu.my2018.quyoulib.core.base.BaseZimuActivity;
 
 import javax.inject.Inject;
 
 import butterknife.BindView;
 
-public class MainActivity extends BaseHcActivity implements MainContract.View, BottomWidget.TabSelectClick {
+public class MainActivity extends BaseZimuActivity implements MainContract.View, BottomWidget.TabSelectClick {
 
     @BindView(R2.id.bottom_widget)
     BottomWidget bottom_widget;
