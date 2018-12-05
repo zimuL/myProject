@@ -1,0 +1,29 @@
+JIRA:
+ÀîÄ¬È» 
+ld_limoran_2018
+
+À¶ºþ
+2799081971@qq.com 
+123456
+
+showdoc
+zimu
+123456
+
+gerrit
+limoran
+ranying20091103
+
+jenkins
+zimu
+umVhM8nH925a97yc
+
+yapi
+2799081971@qq.com
+123456
+
+
+
+list -> map : JsonTransformUtils
+
+mRoleId = prefManager.getInt(mUserId + ":roleid", 0);

@@ -1,0 +1,93 @@
+bz activity???
+/**
+ * ?????$str1$
+ * ??????$str2$
+ *
+ * @author zimu
+ * @Package $PAGENAME$
+ * @date $DATE$
+ */
+
+click adapter??????
+(adapter, view, position) -> {
+    
+}
+
+eve EventBus???
+@Subscribe(threadMode = ThreadMode.MAIN)
+public void onEvent(EventData eventData) {
+    switch (eventData.getType()) {
+        case EventData.$XXX$:
+
+
+evep EventBus???????
+EventBus.getDefault().post(new EventData(EventData.$STR$, null));
+
+getdi Activity???????
+public static Intent getDiyIntent(Context context) {
+    Intent it = new Intent(context, $CLASSNAME$.class);
+    return it;
+}
+
+le Log TAG = zimu
+Log.e("zimu", $Str$);
+
+lee Log TAG = error
+Log.e("error", $Str$);
+
+leg Log Gson
+Log.e("zimu", new Gson().toJson($str$));
+
+
+lly LinearLayout???????(???)
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+</LinearLayout>
+
+rly ??????
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</RelativeLayout>
+
+onc @onClick??????
+/**
+ *  $Doc$
+ * @param view
+ */
+@OnClick(R2.id.$str$)
+public void on$str1$Click(View view){
+    $str2$
+}
+
+one ????????????
+if(mView != null){
+    mView.on$str$Failed(msg);
+}
+
+ons ?????????
+if(mView != null){
+    mView.on$str$Success(response);
+}
+
+rec RecyclerView????
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+showm ???????????? 
+String msg = StringUtils.checkNullPoint(response) ? response : "???";
+showToast(msg);
+
+
+
+
+
+
+
+
