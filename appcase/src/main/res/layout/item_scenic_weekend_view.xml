@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_220"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sd_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_140"
+        android:scaleType="fitCenter"
+        app:roundedCornerRadius="@dimen/dp_4"
+        app:placeholderImageScaleType="fitCenter"
+        app:placeholderImage="@color/main_bg_color"/>
+    <TextView
+        android:id="@+id/tv_scenic_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"
+        android:text="scenic"
+        android:textColor="@color/color_33"
+        android:textSize="@dimen/sp_14"
+        android:gravity="center"/>
+</LinearLayout>

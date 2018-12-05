@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zimu.my2018.appcase">
+
+    <!-- 通过GPS得到精确位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 通过网络得到粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application>
+
+        <activity
+            android:name=".mian.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!-- 景区详情 -->
+        <activity
+            android:name=".scenic.scenicdetail.ScenicDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 景区手绘地图 -->
+        <activity
+            android:name=".scenic.scenicfreehandmap.ScenicFreehandMapActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 景区搜索 -->
+        <activity
+            android:name=".search.searchscenic.SearchScenicActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 景区附近 -->
+        <activity
+            android:name=".scenic.scenicnearby.ScenicNearbyActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 景区评价 -->
+        <activity android:name=".scenic.scenicevaluate.ScenicEvaluateActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 景区关注 -->
+        <activity android:name=".scenic.scenicattentionlist.ScenicAttentionListActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 景区评价列表 -->
+        <activity android:name=".scenic.scenicevaluatelist.ScenicEvaluateListActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 足迹 -->
+        <activity android:name=".scenic.scenicfootprint.ScenicFootprintActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 景区图片 -->
+        <activity android:name=".scenic.scenicbannerpicture.ScenicBannerPictureActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--功能介绍-->
+        <activity android:name=".user.functionintroduce.FunctionIntroduceActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--设置-->
+        <activity android:name=".user.settings.SettingsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--登录-->
+        <activity android:name=".login.loginapp.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--注册-->
+        <activity android:name=".login.registerapp.RegisterActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

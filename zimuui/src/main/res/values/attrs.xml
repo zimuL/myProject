@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTitle">
+        <attr name="ct_title_label" format="string" />
+        <attr name="ct_right_tv" format="string" />
+        <attr name="ct_right_icon" format="reference" />
+        <attr name="ct_show_back" format="boolean" />
+        <attr name="ct_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="right_desc" value="1" />
+            <enum name="right_icon" value="2" />
+        </attr>
+        <attr name="ct_right_tv_dr" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="HcLoadingLayout">
+        <attr name="loading_res_id" format="reference" />
+        <attr name="pre_loading_res_id" format="reference" />
+        <attr name="empty_res_id" format="reference" />
+        <attr name="err_res_id" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandTextView">
+        <attr name="etv_MaxLinesOnShrink" format="reference|integer" />
+        <attr name="etv_EllipsisHint" format="reference|string" /><!--default is ..-->
+        <attr name="etv_ToExpandHint" format="reference|string" /><!--"to expand" hint string, default is "Expand"-->
+        <attr name="etv_ToShrinkHint" format="reference|string" /><!--"to shrink" hint string, default is "Shrink"-->
+        <attr name="etv_GapToExpandHint" format="reference|string" /><!--gap between "toExpandHint" and "trimmed text"-->
+        <attr name="etv_GapToShrinkHint" format="reference|string" /><!--gap between "toShrinkHint" and "trimmed text"-->
+        <attr name="etv_EnableToggle" format="reference|boolean" /><!--if toggle the state when click ExpandTextView-->
+        <attr name="etv_ToExpandHintShow" format="reference|boolean" /><!--if show "toExpandHint"-->
+        <attr name="etv_ToShrinkHintShow" format="reference|boolean" /><!--if show "toShrinkHint"-->
+        <attr name="etv_ToExpandHintColor" format="reference|color" /><!--text color of "toExpandHint"-->
+        <attr name="etv_ToShrinkHintColor" format="reference|color" /><!--text color of "toShrinkHint"-->
+        <attr name="etv_ToExpandHintColorBgPressed" format="reference|color" /><!--background color if "toExpandHint" pressed-->
+        <attr name="etv_ToShrinkHintColorBgPressed" format="reference|color" /><!--background color if "toShrinkHint" pressed-->
+        <attr name="etv_InitState" format="enum"><!--init state, default is shrink-->
+            <enum name="shrink" value="0"/>
+            <enum name="expand" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!--评价星级空间-->
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="PicDescConView">
+        <attr name="pdc_show_desc" format="boolean" />
+        <attr name="pdc_show_choose" format="boolean" />
+        <attr name="pdc_direction" format="enum">
+            <enum name="hor" value="0" />
+            <enum name="grid" value="1" />
+        </attr>
+        <attr name="pdc_grid_count" format="integer" />
+        <attr name="pdc_img_size" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="bot_arr">
+        <attr name="bot_title" format="string" />
+        <attr name="bot_content" format="string" />
+    </declare-styleable>
+</resources>

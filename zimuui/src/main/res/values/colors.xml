@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/color_white</color>
+    <color name="colorPrimaryDark">@color/color_blue</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 主背景色  -->
+    <color name="main_bg_color">#f1f7fd</color>
+
+    <!-- 间隔线颜色 -->
+    <color name="dividing_line_color">#dadfe6</color>
+
+    <!-- simpleCropView -->
+    <color name="base">#FFFFFB</color>
+    <color name="overlay">#AA1C1C1C</color>
+    <color name="text1">#1C1C1C</color>
+    <color name="handle">#86C166</color>
+    <color name="frame">#86C166</color>
+    <color name="guide">#AA86C166</color>
+    <color name="menu_bg">#FFFFFB</color>
+
+    <!-- dialog -->
+    <color name="no_color">#00000000</color>
+
+    <color name="color_gray">#cccccc</color>
+    <color name="color_gray_ec">#ECECEC</color>
+
+    <color name="color_8290AF">#8290AF</color>
+
+
+</resources>

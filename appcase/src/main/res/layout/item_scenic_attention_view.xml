@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zimu.my2018.quyouui.widget.swipeitem.SwipeItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sd_image"
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:scaleType="fitXY"
+            app:roundedCornerRadius="@dimen/dp_4"
+            android:layout_gravity="center_vertical"
+            app:placeholderImage="@mipmap/icon_nine_default"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_scenic_attention_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:textColor="@color/color_33"
+                android:textSize="@dimen/sp_14"
+                tools:text="scenic"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/tv_scenic_attention_location"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:textColor="@color/color_66"
+                android:textSize="@dimen/sp_12"
+                android:maxLines="1"
+                android:ellipsize="end"
+                tools:text="location"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="match_parent"
+            android:background="@color/color_red"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+</com.zimu.my2018.quyouui.widget.swipeitem.SwipeItemLayout>

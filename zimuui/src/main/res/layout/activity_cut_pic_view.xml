@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg_color">
+
+    <RelativeLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_white">
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_58"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buttonRotateImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_margin="@dimen/dp_8"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableTop="@drawable/rotate_text_top_button"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_3"
+                android:text="旋转"
+                android:textColor="@color/select_blue_gray_color"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/button1_1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_margin="@dimen/dp_8"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableTop="@drawable/square_text_top_button"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_3"
+                android:text="方形"
+                android:textColor="@color/select_blue_gray_color"
+                android:textSize="@dimen/sp_10"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/buttonCircle"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_40"
+                android:layout_margin="@dimen/dp_8"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/dp_5"
+                android:drawableTop="@drawable/circle_text_top_button"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_3"
+                android:text="圆形"
+                android:textColor="@color/select_blue_gray_color"
+                android:textSize="@dimen/sp_10"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.zimu.my2018.quyouui.widget.cutimg.CutSelectImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bar"
+        android:layout_marginBottom="@dimen/dp_65"
+        android:layout_marginTop="@dimen/dp_65"
+        custom:backgroundColor="@color/main_bg_color"
+        custom:cropMode="ratio_free"
+        custom:frameColor="@color/frame"
+        custom:frameStrokeWeight="@dimen/dp_1"
+        custom:guideColor="@color/guide"
+        custom:guideShowMode="show_always"
+        custom:guideStrokeWeight="@dimen/dp_1"
+        custom:handleColor="@color/handle"
+        custom:handleShowMode="show_always"
+        custom:handleSize="@dimen/dp_8"
+        custom:minFrameSize="@dimen/dp_50"
+        custom:overlayColor="@color/overlay"
+        custom:touchPadding="@dimen/dp_8" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_alignTop="@id/tab_bar"
+        android:background="@color/color_99" />
+
+</RelativeLayout>

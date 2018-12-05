@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zimu.my2018.quyouui">
+
+    <application>
+
+        <!-- 图片选择器 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- 图片 查看器 -->
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- 剪切图片界面 -->
+        <activity
+            android:name=".core.activity.CutPicViewActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 图片预览 -->
+        <activity android:name=".core.activity.PhotoDetailActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

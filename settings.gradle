@@ -1,0 +1,1 @@
+include ':app', ':zimulib', ':zimuui', ':zimuapi', ':appmodel', ':appcase'
