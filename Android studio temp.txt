@@ -1,29 +1,29 @@
-bz activity???
+bz activity注释
 /**
- * ?????$str1$
- * ??????$str2$
+ * 功能$str1$
+ * 描述$str2$
  *
  * @author zimu
  * @Package $PAGENAME$
  * @date $DATE$
  */
 
-click adapter??????
+click adapter响应事件
 (adapter, view, position) -> {
     
 }
 
-eve EventBus???
+eve EventBus回调
 @Subscribe(threadMode = ThreadMode.MAIN)
 public void onEvent(EventData eventData) {
     switch (eventData.getType()) {
         case EventData.$XXX$:
 
 
-evep EventBus???????
+evep EventBus发送消息
 EventBus.getDefault().post(new EventData(EventData.$STR$, null));
 
-getdi Activity???????
+getdi Activity跳转引导
 public static Intent getDiyIntent(Context context) {
     Intent it = new Intent(context, $CLASSNAME$.class);
     return it;
@@ -39,7 +39,7 @@ leg Log Gson
 Log.e("zimu", new Gson().toJson($str$));
 
 
-lly LinearLayout???????(???)
+lly LinearLayout线性布局(垂直)
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -47,14 +47,14 @@ lly LinearLayout???????(???)
 
 </LinearLayout>
 
-rly ??????
+rly 相对布局
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 </RelativeLayout>
 
-onc @onClick??????
+onc @onClick点击事件
 /**
  *  $Doc$
  * @param view
@@ -64,24 +64,24 @@ public void on$str1$Click(View view){
     $str2$
 }
 
-one ????????????
+one 接口回调失败
 if(mView != null){
     mView.on$str$Failed(msg);
 }
 
-ons ?????????
+ons 接口回调成功
 if(mView != null){
     mView.on$str$Success(response);
 }
 
-rec RecyclerView????
+rec RecyclerView创建
 <android.support.v7.widget.RecyclerView
     android:id="@+id/recyclerview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content" />
 
-showm ???????????? 
-String msg = StringUtils.checkNullPoint(response) ? response : "???";
+showm 返回成功吐司
+String msg = StringUtils.checkNullPoint(response) ? response : "成功";
 showToast(msg);
 
 
